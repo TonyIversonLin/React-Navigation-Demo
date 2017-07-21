@@ -11,7 +11,7 @@ export default class ChatScreen extends React.Component {
 		return {
 			title: isInfo ? `${user}'s Contact Info` : `Chat with ${state.params.user}`,
 			headerRight: (
-				<Button title={isInfo ? 'Done': `${user}'s info`}
+				<Button title={isInfo ? 'Done': 'Info'}
 								onPress={() => setParams({mode: isInfo ? 'none' : 'info'})}/>
 			),
 		}

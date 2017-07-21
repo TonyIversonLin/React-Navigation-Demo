@@ -12,12 +12,13 @@ import {
 } from 'react-native';
 
 import App from './App/App.js'
+import App2 from './App/App2.js'
 
 export default class reactNavigationDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <App/>
+        <App2/>
       </View>
     );
   }
