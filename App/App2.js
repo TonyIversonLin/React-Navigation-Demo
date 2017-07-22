@@ -5,6 +5,7 @@ import { Icon } from 'react-native-elements';
 import Feed from './screens2/Feed.js'
 import Me from './screens2/Me.js'
 import UserDetail from './screens2/UserDetail.js'
+import Setting from './screens2/Setting.js'
 
 const FeedStack = StackNavigator({
 	Feed: {
@@ -21,7 +22,7 @@ const FeedStack = StackNavigator({
 	}
 });
 
-const App2 = TabNavigator({
+const Tabs = TabNavigator({
 	Feed: {
 		screen: FeedStack,
 		navigationOptions: {
@@ -38,6 +39,23 @@ const App2 = TabNavigator({
 	}
 });
 
+const SettingStack = StackNavigator({
+	Settings: {
+		screen: Setting,
+		navigationOptions: {
+			title: 'Setting'
+		}
+	}
+})
+
+const Root = StackNavigator({
+	Tabs: {screen: Tabs},
+	Setting: {screen: SettingStack}
+},{
+	mode: 'modal',
+	headerMode: 'none'
+})
 
 
-export default App2;
+
+export default Root;

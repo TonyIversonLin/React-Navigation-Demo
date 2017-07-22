@@ -17,7 +17,7 @@ export default class Me extends Component {
         <Button
           title="Settings"
           buttonStyle={{ marginTop: 20 }}
-          onPress={ () => this.props.navigation.navigate('Settings')}/>
+          onPress={ () => this.props.navigation.navigate('Setting')}/>
 
         <List>
 	       	<ListItem
