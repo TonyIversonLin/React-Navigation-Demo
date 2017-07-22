@@ -14,7 +14,7 @@ export default class Feed extends Component {
 											avatar={{uri: user.picture.thumbnail}}
 											title={`${user.name.first} ${user.name.last}`}
 											subtitle={user.email}
-											onPress={ () => this.props.navigation.navigate('Details', { ...user })}
+											onPress={ () => this.props.navigation.navigate('UserDetail', { ...user })}
 											roundAvatar/>
 					))}
 				</List>
